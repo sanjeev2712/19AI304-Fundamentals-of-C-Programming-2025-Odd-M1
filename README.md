@@ -4,7 +4,7 @@
 ## 2. Implementation of different categories of operators.
 # Ex.No:1
   Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 
+# Date : 29/01/2026
 # Aim:
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
@@ -26,7 +26,34 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    // Integer literal
+    int intLiteral = 100;
+
+    // Floating-point literal
+    float floatLiteral = 10.5;
+
+    // Character literal
+    char charLiteral = 'A';
+
+    // String literal
+    char stringLiteral[] = "Hello, World!";
+
+    // Displaying the literals
+    printf("Integer Literal: %d\n", intLiteral);
+    printf("Floating-point Literal: %.2f\n", floatLiteral);
+    printf("Character Literal: %c\n", charLiteral);
+    printf("String Literal: %s\n", stringLiteral);
+
+    return 0;
+}
+```
 # Output:
+![alt text](image.png)
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +84,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+// Macro constant
+#define PI 3.14159
+
+int main() {
+    // Constant variable
+    const int MAX_VALUE = 100;
+
+    // Displaying values
+    printf("Macro Constant PI: %.5f\n", PI);
+    printf("Constant Variable MAX_VALUE: %d\n", MAX_VALUE);
+
+    return 0;
+}
+```
 # Output:
+![alt text](image-2.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +126,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    // Declaring variables of different data types
+    int integerVar = 25;
+    float floatVar = 10.5f;
+    double doubleVar = 20.123456;
+    char charVar = 'Z';
+
+    // Displaying values using printf
+    printf("Integer value: %d\n", integerVar);
+    printf("Float value: %.2f\n", floatVar);
+    printf("Double value: %.6lf\n", doubleVar);
+    printf("Character value: %c\n", charVar);
+
+    return 0;
+}
+```
 # Output:
+![alt text](image-3.png)
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +186,46 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+
+    // Input from user
+    printf("Enter two integers:\n");
+    scanf("%d %d", &a, &b);
+
+    // Arithmetic Operations
+    printf("\n--- Arithmetic Operations ---\n");
+    printf("Addition: %d\n", a + b);
+    printf("Subtraction: %d\n", a - b);
+    printf("Multiplication: %d\n", a * b);
+
+    if (b != 0) {
+        printf("Division: %d\n", a / b);
+        printf("Remainder: %d\n", a % b);
+    } else {
+        printf("Division: Undefined (division by zero)\n");
+        printf("Remainder: Undefined (division by zero)\n");
+    }
+
+    // Bitwise Operations
+    printf("\n--- Bitwise Operations ---\n");
+    printf("AND (a & b): %d\n", a & b);
+    printf("OR (a | b): %d\n", a | b);
+    printf("XOR (a ^ b): %d\n", a ^ b);
+    printf("Left Shift (a << 1): %d\n", a << 1);
+    printf("Right Shift (a >> 1): %d\n", a >> 1);
+    printf("NOT (~a): %d\n", ~a);
+    printf("NOT (~b): %d\n", ~b);
+
+    return 0;
+}
+```
 # Output:
+![alt text](image-4.png)
+![alt text](image-5.png)
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +270,33 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    // Input from user
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    // Classification using ternary operator
+    (ch >= '0' && ch <= '9') ?
+        printf("It is a Digit.\n") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||
+          ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') ?
+            printf("It is a Vowel.\n") :
+            printf("It is a Consonant.\n")) :
+        printf("It is a Special Symbol.\n");
+
+    return 0;
+}
+```
+
 # Output:
+![alt text](image-6.png)
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
